@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navBar {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 5px 5px 15px 0px grey;
+}
+.logoImg {
+  width: 10%;
+}
+.logo {
+  width: 60%;
+}
+.navLink {
+  width: 20%;
+}
+
+.navLink > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-action {
+  width: 7%;
+}
+.log-btn {
+  width: 100%;
+  padding: 0.3rem;
+  background-color: #97c14e;
+  color: white;
+  border-style: none;
+  border-radius: 0.3em;
+}
+
+/*  */
+.recipe-conatiner {
+  margin-top: 4em;
+}
+
+.recipe-img {
+  width: 100%;
+  /* padding: 1em; */
+}
+
+.card {
+  width: 100%;
+  padding: 1em;
+  margin: 3em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.recipe-card {
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px gray;
+}
+.order-btn {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 1em;
+  background-color: #97c14e;
+  border-style: none;
+  color: white;
+}
+.search-box {
+  text-align: center;
+}
+.search-box input {
+  width: 20%;
+  padding: 0.5em;
+  border-radius: 15px;
+  border-style: none;
+  background-color: #f5f2ef;
+}
+.search-box button {
+  width: 8%;
+  padding: 0.5em;
+  border-radius: 15px;
+  background-color: #97c14e;
+  color: white;
+  border-style: none;
+}
+.filterbtn {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  padding: 1em;
+}
+.filterbtn button {
+  width: 17%;
+  padding: 0.4em;
+  border-style: none;
+  background-color: #86a74d;
+  color: white;
+  border-radius: 5px;
+}
+
+/* footer section */
+.footer-section {
+  background-color: #333;
+  color: white;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-around;
+  padding: 2em;
+  cursor: pointer;
+}
+.footer-logo {
+  width: 10%;
+}
+.footer-img {
+  width: 100%;
+}
+.footer-link h3 {
+  margin-top: 1em;
+}
+.footer-link p {
+  margin-top: 0.7em;
+}
+.policies h3 {
+  margin-top: 1em;
+}
+.policies p {
+  margin-top: 0.7em;
+}
+.icons i {
+  margin-top: 2em;
+  margin-left: 2%;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.copyright-div {
+  height: 3em;
+  background-color: black;
+  color: white;
+}
+.copyright {
+  text-align: center;
+  position: relative;
+  top: 1em;
+}
+/* error section */
+.error-sec {
+  color: red;
+}
+/* about page */
+.about-recipe-container {
+  margin: 3em auto;
+
+  width: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-shadow: 5px 5px 10px 0px gray;
+}
+
+.about-recipe-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+/* contact page */
+.contact-us {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Title Styles */
+.contact-us-title {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+}
+
+/* Form Styles */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #86a74d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #86a74d;
+}
+
+/* media  query */
+@media screen and (max-width: 480px) {
+  .nav-btn-div {
+    width: 30%;
+  }
+  .logoImg {
+    width: 15%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .navLink {
+    width: 50%;
+    font-size: 1em;
+  }
+  .card {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .user-action {
+    width: 15%;
+  }
+  .log-btn {
+    width: 100%;
+  }
+  .footer-section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 30%;
+  }
+  .footer-img {
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .search-box input {
+    width: 50%;
+  }
+  .search-box button {
+    width: 20%;
+  }
+  .filterbtn {
+    width: 100%;
+  }
+  .filterbtn button {
+    width: 17%;
+  }
+}
