@@ -167,10 +167,8 @@ ul a {
 /* about page */
 .about-recipe-container {
   margin: 3em auto;
-
   width: 50%;
   padding: 20px;
-  font-family: Arial, sans-serif;
   line-height: 1.6;
   box-shadow: 5px 5px 10px 0px gray;
 }
@@ -293,5 +291,68 @@ button[type="submit"]:hover {
   }
   .filterbtn button {
     width: 17%;
+  }
+  .about-recipe-container {
+    margin: 3em auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 431px) {
+  .nav-btn-div {
+    width: 30%;
+  }
+  .logoImg {
+    width: 15%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .navLink {
+    width: 50%;
+    font-size: 1em;
+  }
+  .card {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .user-action {
+    width: 15%;
+  }
+  .log-btn {
+    width: 100%;
+  }
+  .footer-section {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 30%;
+  }
+  .footer-img {
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 1.2em;
+  }
+
+  .search-box input {
+    width: 50%;
+  }
+  .search-box button {
+    width: 20%;
+  }
+  .filterbtn {
+    width: 100%;
+  }
+  .filterbtn button {
+    width: 17%;
+  }
+  .about-recipe-container {
+    margin: 3em auto;
+    width: 90%;
   }
 }
