@@ -314,6 +314,14 @@ button[type="submit"]:hover {
     margin: 3em auto;
     width: 90%;
   }
+  .shimmer-sec {
+    width: 100%;
+    flex-direction: column;
+  }
+  .shimmer-box {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 @media screen and (max-width: 431px) {
   .nav-btn-div {
@@ -373,12 +381,12 @@ button[type="submit"]:hover {
     margin: 3em auto;
     width: 90%;
   }
-}
-.shimmer-sec {
-  width: 100%;
-  flex-direction: column;
-}
-.shimmer-box {
-  margin: 0 auto;
-  width: 90%;
+  .shimmer-sec {
+    width: 100%;
+    flex-direction: column;
+  }
+  .shimmer-box {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
