@@ -8,6 +8,7 @@ import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router";
 import Contact from "./component/Contact";
 import Error from "./component/Error";
+
 import { lazy, Suspense } from "react";
 
 const About = lazy(() => import("./component/About"));

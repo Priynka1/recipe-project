@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const Footer = () => {
   return (
     <>
@@ -11,9 +13,17 @@ export const Footer = () => {
           </div>
           <div className="footer-link">
             <h3>Quick Links</h3>
-            <p>Home</p>
-            <p>About</p>
-            <p>Contact us</p>
+            <ul>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact us</li>
+              </Link>
+            </ul>
           </div>
           <div className="policies">
             <h3>Legal</h3>

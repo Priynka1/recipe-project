@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card } from "./RecipeCard";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [data, setData] = useState([]);
@@ -19,7 +20,9 @@ const Body = () => {
     data();
   }, []);
 
-  return (
+  return data.length === 0 ? (
+    <Shimmer></Shimmer>
+  ) : (
     <>
       <div className="recipe-conatiner">
         <div className="search-box">
