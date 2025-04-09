@@ -374,3 +374,11 @@ button[type="submit"]:hover {
     width: 90%;
   }
 }
+.shimmer-sec {
+  width: 100%;
+  flex-direction: column;
+}
+.shimmer-box {
+  margin: 0 auto;
+  width: 90%;
+}
