@@ -342,6 +342,11 @@ button[type="submit"]:hover {
   .recipeInfo {
     width: 90%;
   }
+  .contact-footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 1em;
+  }
 }
 @media screen and (max-width: 431px) {
   .nav-btn-div {
