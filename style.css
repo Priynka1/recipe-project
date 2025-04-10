@@ -64,6 +64,10 @@ ul a {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
+.card a {
+  text-decoration: none;
+  color: black;
+}
 .recipe-card {
   padding: 1em;
   border-radius: 10px;
@@ -254,6 +258,19 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #86a74d;
 }
+/* recipe info */
+.recipeInfo {
+  margin: 2em auto;
+  width: 30%;
+  box-shadow: 5px 5px 10px 0px grey;
+  padding: 0.5em;
+  border-radius: 10px;
+  text-align: center;
+}
+.recipe-info-img {
+  margin-top: 1em;
+  width: 70%;
+}
 
 /* media  query */
 @media screen and (max-width: 480px) {
@@ -322,6 +339,9 @@ button[type="submit"]:hover {
     margin: 0 auto;
     width: 90%;
   }
+  .recipeInfo {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 431px) {
   .nav-btn-div {
@@ -387,6 +407,9 @@ button[type="submit"]:hover {
   }
   .shimmer-box {
     margin: 0 auto;
+    width: 90%;
+  }
+  .recipeInfo {
     width: 90%;
   }
 }

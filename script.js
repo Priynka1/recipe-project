@@ -8,6 +8,7 @@ import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router";
 import Contact from "./component/Contact";
 import Error from "./component/Error";
+import Recipe from "./component/Recipes";
 
 import { lazy, Suspense } from "react";
 
@@ -39,6 +40,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       { path: "/contact", element: <Contact></Contact> },
+      { path: "/recipes/:resId", element: <Recipe></Recipe> },
     ],
   },
 ]);

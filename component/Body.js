@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card } from "./RecipeCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router";
 
 const Body = () => {
   const [data, setData] = useState([]);
@@ -9,7 +10,6 @@ const Body = () => {
 
   useEffect(() => {
     // console.log("use effect");
-
     const data = async () => {
       const response = await fetch("https://dummyjson.com/recipes");
       const readable = await response.json();
@@ -104,7 +104,11 @@ const Body = () => {
 
       <div className="card">
         {data.map((elem) => {
-          return <Card key={elem.id} recipes={elem}></Card>;
+          return (
+            <Link key={elem.id} to={`/recipes/${elem.id}`}>
+              <Card key={elem.id} recipes={elem}></Card>
+            </Link>
+          );
         })}
       </div>
     </>
